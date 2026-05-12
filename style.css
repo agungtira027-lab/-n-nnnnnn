@@ -1,0 +1,385 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #000;
+    color: #fff;
+}
+
+/* LOGIN */
+.login-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.login-page input {
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+}
+
+.login-page button {
+    padding: 10px 20px;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background: #111;
+    border-bottom: 1px solid #444;
+}
+
+/* PRODUK */
+.container {
+    padding: 20px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #111;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+}
+
+button {
+    background: #fff;
+    color: #000;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+/* KERANJANG */
+.cart-box {
+    position: fixed;
+    right: -320px;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    background: #121212;
+    padding: 20px;
+    overflow-y: auto;
+    transition: 0.4s;
+    z-index: 999;
+}
+
+.cart-box.active {
+    right: 0;
+}
+
+.cart-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 15px;
+    border-radius: 50%;
+}
+.login-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+}
+/* ANIMASI */
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(20px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+.fade-in {
+    animation: fadeIn 1s ease;
+}
+
+/* LOGIN BUTTON */
+.login-btn {
+    width: 250px;
+    padding: 12px;
+    margin: 10px;
+    border: none;
+    border-radius: 30px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-btn:hover {
+    transform: scale(1.05);
+}
+
+/* WARNA BRAND */
+.google {
+    background: #fff;
+    color: #000;
+}
+
+.fb {
+    background: #1877f2;
+    color: #fff;
+}
+
+.tiktok {
+    background: #000;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+/* CARD ANIMASI */
+.card {
+    animation: fadeIn 0.8s ease;
+}
+
+/* CART SLIDE */
+.cart-box {
+    transition: 0.3s;
+}
+.form-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.form-box input {
+    width: 260px;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background: #f1f1f1;
+    font-size: 14px;
+}
+
+.login-main {
+    width: 150px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background: #fff;
+    color: #000;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-main:hover {
+    transform: scale(1.05);
+}
+
+/* DARK / LIGHT MODE */
+.light-mode {
+    background: #fff;
+    color: #000;
+}
+
+.light-mode .form-box input {
+    background: #ddd;
+}
+
+.light-mode .login-main {
+    background: #000;
+    color: #fff;
+}
+/* GLOBAL */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #0f0f0f;
+    color: #fff;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 25px;
+    background: #121212;
+    border-bottom: 1px solid #222;
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* SEARCH */
+.search {
+    width: 40%;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background: #1f1f1f;
+    color: white;
+}
+
+/* NAV RIGHT */
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* ICON BUTTON */
+.icon-btn {
+    background: #1f1f1f;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.icon-btn:hover {
+    background: #333;
+}
+
+/* BADGE */
+.badge {
+    background: red;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+/* LOGOUT */
+.logout {
+    background: #ff4d4d;
+    color: white;
+    border-radius: 8px;
+}
+
+/* PRODUK */
+.container {
+    padding: 30px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+/* CARD MODERN */
+.card {
+    background: #181818;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.3s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.8);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* CARD CONTENT */
+.card h3 {
+    margin: 10px;
+}
+
+.card p {
+    margin: 10px;
+    color: #00ffae;
+    font-weight: bold;
+}
+
+/* BUTTON BELI */
+.card button {
+    width: 90%;
+    margin: 10px;
+    background: linear-gradient(45deg, #00ffae, #00cfff);
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.card button:hover {
+    opacity: 0.8;
+}
+
+/* CART SLIDE SMOOTH */
+.cart-box {
+    position: fixed;
+    right: -320px;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    background: #121212;
+    padding: 20px;
+    transition: 0.4s;
+}
+
+.cart-box.active {
+    right: 0;
+}
+
+/* CART ITEM */
+#cartList li {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 10px;
+}
+
+/* DARK / LIGHT MODE */
+.light-mode {
+    background: #fff;
+    color: #000;
+}
+
+.light-mode .navbar {
+    background: #eee;
+}
+
+.light-mode .card {
+    background: #f5f5f5;
+}
+.checkout-btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background: linear-gradient(45deg, #00ffae, #00cfff);
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.checkout-btn:hover {
+    opacity: 0.8;
+}
